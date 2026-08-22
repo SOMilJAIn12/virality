@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-feature-settings: "tnum" 1;
+  }
+  ::selection {
+    background: #3452D9;
+    color: #FBF9F3;
+  }
+}
+
+@layer utilities {
+  .label-micro {
+    @apply text-micro uppercase tracking-widest text-muted font-medium;
+  }
+}

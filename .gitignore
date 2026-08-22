@@ -1,0 +1,548 @@
+# ============================================================
+# AI VIRALITY SIMULATOR - ROOT .gitignore
+# Python + FastAPI + Node + Express + React + Vite + PostgreSQL
+# ============================================================
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+**/__pycache__/
+
+*.py[cod]
+*$py.class
+
+*.pyd
+*.so
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Virtualenv files
+pyvenv.cfg
+
+# Python packaging
+*.egg
+*.egg-info/
+**/*.egg-info/
+
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+wheels/
+
+MANIFEST
+.installed.cfg
+pip-wheel-metadata/
+
+# Python cache / tooling
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.pyright/
+.ruff_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+coverage.json
+htmlcov/
+.pytest_cache/
+
+# Hypothesis
+.hypothesis/
+
+# Tox
+.tox/
+
+# Nox
+.nox/
+
+# IPython / Jupyter
+.ipynb_checkpoints/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# PyCharm
+.idea/
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+# NEVER commit real environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# BUT keep example environment templates
+!.env.example
+!**/.env.example
+
+# API keys / secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# Secret/config files
+secrets/
+secret/
+secrets.json
+secret.json
+credentials.json
+credentials.yml
+credentials.yaml
+
+# Local config
+config.local.*
+settings.local.*
+
+
+# ============================================================
+# NODE.JS / NPM
+# ============================================================
+
+node_modules/
+**/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Node diagnostic files
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Package manager caches
+.npm-cache/
+.npm-global/
+
+
+# ============================================================
+# FRONTEND / VITE / REACT
+# ============================================================
+
+# Vite build output
+frontend/dist/
+frontend/.vite/
+
+dist/
+**/dist/
+
+# React build output
+build/
+**/build/
+
+# Vite cache
+.vite/
+**/.vite/
+
+# ESLint cache
+.eslintcache
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Next.js (in case added later)
+.next/
+out/
+
+# Nuxt
+.nuxt/
+
+# Angular
+.angular/
+.angular/cache/
+
+
+# ============================================================
+# BACKEND GENERATED FILES
+# ============================================================
+
+backend/uploads/
+backend/uploads/*
+backend/tmp/
+backend/temp/
+
+uploads/
+tmp/
+temp/
+
+
+# ============================================================
+# VIDEO / MEDIA TEMPORARY FILES
+# ============================================================
+
+# Temporary video processing files
+*.tmp
+*.temp
+*.part
+*.partial
+
+# FFmpeg temporary files
+*.fftemp
+
+# Do NOT ignore videos/ or *.mp4 here.
+# Project/sample videos may be required by the simulator.
+
+
+# ============================================================
+# DATABASE
+# ============================================================
+
+# SQLite local databases
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+
+# PostgreSQL local dump/backup files
+*.dump
+*.sql.gz
+
+# Database logs
+postgresql.log
+
+# Local database folders
+.pgdata/
+postgres-data/
+postgresql-data/
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+logs/
+**/logs/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+debug.log
+error.log
+
+
+# ============================================================
+# TEMPORARY / GENERATED FILES
+# ============================================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*.tmp
+*.temp
+
+*.cache
+.cache/
+**/.cache/
+
+*.pid
+*.seed
+
+# OS temporary files
+*.temp
+*.tmp
+
+
+# ============================================================
+# WINDOWS
+# ============================================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Windows crash dumps
+*.dmp
+
+# Windows temporary files
+*.stackdump
+
+
+# ============================================================
+# macOS
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+._*
+
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+
+.DocumentRevisions-V100
+
+
+# ============================================================
+# LINUX
+# ============================================================
+
+*~
+.directory
+
+.nfs*
+
+
+# ============================================================
+# VS CODE
+# ============================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# If you don't want ANY VS Code files, uncomment:
+# .vscode/
+
+
+# ============================================================
+# VISUAL STUDIO
+# ============================================================
+
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+
+# ============================================================
+# JETBRAINS / PYCHARM
+# ============================================================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+
+# ============================================================
+# TEST / COVERAGE OUTPUT
+# ============================================================
+
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+
+test-results/
+test-results/
+playwright-report/
+blob-report/
+
+junit.xml
+
+
+# ============================================================
+# DOCKER
+# ============================================================
+
+# Docker local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker volumes
+.docker/
+
+# Docker environment files
+.env.docker
+.env.docker.local
+
+
+# ============================================================
+# CLOUD / DEPLOYMENT
+# ============================================================
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Firebase
+.firebase/
+
+# Serverless
+.serverless/
+
+# Terraform state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+
+# ============================================================
+# AI / ML GENERATED FILES
+# ============================================================
+
+# Model caches
+.cache/
+**/.cache/
+
+# Hugging Face cache
+.huggingface/
+.cache/huggingface/
+
+# Whisper/model downloads
+models/
+model_cache/
+model_cache/
+
+# ML experiment outputs
+runs/
+wandb/
+mlruns/
+
+# TensorBoard
+runs/
+
+# Generated embeddings/vector stores
+chroma/
+chroma_db/
+vectorstore/
+vector_store/
+
+# Pickled/generated model files
+*.pkl
+*.pickle
+*.joblib
+
+
+# ============================================================
+# JUPYTER / DATA SCIENCE
+# ============================================================
+
+.ipynb_checkpoints/
+
+# Generated datasets / exports
+*.parquet
+*.feather
+
+# NOTE:
+# CSV files are NOT ignored because they may be project data.
+
+
+# ============================================================
+# ARCHIVES
+# ============================================================
+
+# Temporary archives only
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ZIP files are intentionally NOT ignored.
+# You may want to keep release/project ZIPs.
+
+
+# ============================================================
+# GENERATED DOCUMENTATION / EXPORTS
+# ============================================================
+
+*.pdf~
+*.docx~
+*.xlsx~
+*.pptx~
+
+
+# ============================================================
+# LOCAL DEVELOPMENT
+# ============================================================
+
+.local/
+.local.*
+local/
+local.*
+
+*.local
+*.development.local
+*.test.local
+*.production.local
+
+
+# ============================================================
+# LOCK / PROCESS FILES
+# ============================================================
+
+*.lock.tmp
+*.pid
+*.pid.lock
+
+
+# ============================================================
+# SECURITY / CERTIFICATES
+# ============================================================
+
+*.csr
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ============================================================
+# END
+# ============================================================
